@@ -25,7 +25,7 @@ const showDetails = (data) => {
 
 const getConditions = async (cityKey) => {
     const baseURL = 'http://dataservice.accuweather.com/currentconditions/v1/';
-    const apiKey = "UbNbNFQ5WQi4uDydqHY30z3hJlHQTs59";
+    const apiKey = "imVPmPCbE5JHeQE6G525u8jAAQeJC5aK";
     const query = `${cityKey}?apikey=${apiKey}`;
 
     const response = await fetch(baseURL + query);
@@ -36,7 +36,7 @@ const getConditions = async (cityKey) => {
 
 const getCity = async (city) => {
     const baseURL = 'http://dataservice.accuweather.com/locations/v1/cities/search';
-    const apiKey = "UbNbNFQ5WQi4uDydqHY30z3hJlHQTs59";
+    const apiKey = "imVPmPCbE5JHeQE6G525u8jAAQeJC5aK";
 
     const query = `?apikey=${apiKey}&q=${city}`;
     const response = await fetch(baseURL + query);
@@ -59,7 +59,6 @@ const getCity = async (city) => {
 const weather = () => {
 
     const weatherBtn = document.querySelector('#w-btn')
-    console.log('radi')
     
     let cityName = document.querySelector('#input').value.trim();
         getCity(cityName)
