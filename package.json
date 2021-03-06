@@ -1,0 +1,20 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "simple weather app with realtime weather",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NemanjaP83/weather-app.git"
+  },
+  "keywords": [],
+  "author": "NemanjaP83",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NemanjaP83/weather-app/issues"
+  },
+  "homepage": "https://github.com/NemanjaP83/weather-app#readme"
+}

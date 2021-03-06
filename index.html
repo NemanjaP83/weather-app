@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/084c710805.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Weather-app</title>
+</head>
+<body>
+   <div class="continer container-fluid text-center">
+       <div class="mx-auto text-center w-50">
+               <h1 id="title" class="mb-3 display-4">WEATHER<i class="fas fa-cloud" style="margin-left: 25px"></i></h1>
+           <h2 class="location">location</h2>
+           <p class="temp">&deg;C</p>
+           <span class="weather">weather</span>
+           <div class="wIcon mb-3 mt-2"><img src="img/icons/1.svg" alt="icon" id="icon"></div>
+            <p class="time">day or night</p>
+       </div>
+       <div class="container w-50 d-flex justify-content-center text-center">
+           <div class="row d-flex">  
+            <p class="mx-auto w-100" id="msg">Enter location for weather conditions</p>
+            <input type="text" class="form-control form-control-sm col-8 mx-auto" id="input" placeholder="enter the city name to search">
+            <span class="error mx-auto w-100"></span>
+            <div class="w-100" id="search">
+                <button id="w-btn" onclick="weather()" class="btn btn-outline-light mt-3 mx-auto">Search</button>
+            </div>
+           </div>
+       </div>
+    <a href="https://github.com/NemanjaP83?tab=repositories" target="blank" class="mx-auto github">Coded by Nemanja <i class="fab fa-github"></i></a>
+   </div>
+   
+   <script src="./app.js"></script>
+</body>
+</html>
