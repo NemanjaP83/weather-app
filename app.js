@@ -58,7 +58,7 @@ const getCity = async (city) => {
 
 const weather = () => {
 
-    const weatherBtn = document.querySelector('#w-btn')
+    // const weatherBtn = document.querySelector('#w-btn')
     
     let cityName = document.querySelector('#input').value.trim();
         getCity(cityName)
