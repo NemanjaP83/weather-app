@@ -57,12 +57,11 @@ const getCity = async (city) => {
 
 
 const weather = () => {
-
-    // const weatherBtn = document.querySelector('#w-btn')
     
     let cityName = document.querySelector('#input').value.trim();
         getCity(cityName)
         .then((data) => {
+            console.log(data)
             return getConditions(data[0].Key);
         })
         .then((data) => {
@@ -71,7 +70,7 @@ const weather = () => {
         .catch((err) => {
             const showError = document.querySelector('.error');
             if (err) {
-                showError.innerHTML = `enter the city name in English`
+                showError.innerHTML = `Can't find location.`
             }
         })
 }
